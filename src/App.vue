@@ -1,379 +1,230 @@
 <template>
-  <!-- Header -->
-  <header id="header" class="bg-gray-700">
-    <nav class="container mx-auto flex justify-start items-center py-5 px-4">
-      <!-- App Name -->
-      <a class="text-white font-bold uppercase text-2xl mr-4" href="#">Music</a>
-
-      <div class="flex flex-grow items-center">
-        <!-- Primary Navigation -->
-        <ul class="flex flex-row mt-1">
-          <!-- Navigation Links -->
-          <li>
-            <a class="px-2 text-white" href="#">Login / Register</a>
-          </li>
-          <li>
-            <a class="px-2 text-white" href="#">Manage</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
+  <app-header />
   <!-- Introduction -->
-  <section class="mb-8 py-20 text-white text-center relative">
+  <section class="relative py-20 mb-8 text-center text-white">
     <div
       class="absolute inset-0 w-full h-full bg-contain introduction-bg"
-      style="background-image: url(assets/img/header.png)"
+      style="background-image: url(assets/img/header.png);"
     ></div>
     <div class="container mx-auto">
       <div class="text-white main-header-content">
-        <h1 class="font-bold text-5xl mb-5">Listen to Great Music!</h1>
-        <p class="w-full md:w-8/12 mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et dolor mollis, congue
-          augue non, venenatis elit. Nunc justo eros, suscipit ac aliquet imperdiet, venenatis et
-          sapien. Duis sed magna pulvinar, fringilla lorem eget, ullamcorper urna.
+        <h1 class="mb-5 text-5xl font-bold">Listen to Great Music!</h1>
+        <p class="w-full mx-auto md:w-8/12">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et
+          dolor mollis, congue augue non, venenatis elit. Nunc justo eros,
+          suscipit ac aliquet imperdiet, venenatis et sapien. Duis sed magna
+          pulvinar, fringilla lorem eget, ullamcorper urna.
         </p>
       </div>
     </div>
 
     <img
-      class="relative block mx-auto mt-5 -mb-20 w-auto max-w-full"
+      class="relative block w-auto max-w-full mx-auto mt-5 -mb-20"
       src="assets/img/introduction-music.png"
     />
   </section>
 
   <!-- Main Content -->
   <section class="container mx-auto">
-    <div class="bg-white rounded border border-gray-200 relative flex flex-col">
+    <div class="relative flex flex-col bg-white border border-gray-200 rounded">
       <div class="px-6 pt-6 pb-5 font-bold border-b border-gray-200">
         <span class="card-title">Songs</span>
         <!-- Icon -->
-        <i class="fa fa-headphones-alt float-right text-green-400 text-xl"></i>
+        <i class="float-right text-xl text-green-400 fa fa-headphones-alt"></i>
       </div>
       <!-- Playlist -->
       <ol id="playlist">
         <li
-          class="
-            flex
-            justify-between
-            items-center
-            p-3
-            pl-6
-            cursor-pointer
-            transition
-            duration-300
-            hover:bg-gray-50
-          "
+          class="flex items-center justify-between p-3 pl-6 transition duration-300 cursor-pointer hover:bg-gray-50"
         >
           <div>
-            <a href="#" class="font-bold block text-gray-600">Song Title</a>
-            <span class="text-gray-500 text-sm">Artist Name</span>
+            <a href="#" class="block font-bold text-gray-600">Song Title</a>
+            <span class="text-sm text-gray-500">Artist Name</span>
           </div>
 
-          <div class="text-gray-600 text-lg">
+          <div class="text-lg text-gray-600">
             <span class="comments">
-              <i class="fa fa-comments text-gray-600"></i>
+              <i class="text-gray-600 fa fa-comments"></i>
               15
             </span>
           </div>
         </li>
         <li
-          class="
-            flex
-            justify-between
-            items-center
-            p-3
-            pl-6
-            cursor-pointer
-            transition
-            duration-300
-            hover:bg-gray-50
-          "
+          class="flex items-center justify-between p-3 pl-6 transition duration-300 cursor-pointer hover:bg-gray-50"
         >
           <div>
-            <a href="#" class="font-bold block text-gray-600">Song Title</a>
-            <span class="text-gray-500 text-sm">Artist Name</span>
+            <a href="#" class="block font-bold text-gray-600">Song Title</a>
+            <span class="text-sm text-gray-500">Artist Name</span>
           </div>
 
-          <div class="text-gray-600 text-lg">
+          <div class="text-lg text-gray-600">
             <span class="comments">
-              <i class="fa fa-comments text-gray-600"></i>
+              <i class="text-gray-600 fa fa-comments"></i>
               15
             </span>
           </div>
         </li>
         <li
-          class="
-            flex
-            justify-between
-            items-center
-            p-3
-            pl-6
-            cursor-pointer
-            transition
-            duration-300
-            hover:bg-gray-50
-          "
+          class="flex items-center justify-between p-3 pl-6 transition duration-300 cursor-pointer hover:bg-gray-50"
         >
           <div>
-            <a href="#" class="font-bold block text-gray-600">Song Title</a>
-            <span class="text-gray-500 text-sm">Artist Name</span>
+            <a href="#" class="block font-bold text-gray-600">Song Title</a>
+            <span class="text-sm text-gray-500">Artist Name</span>
           </div>
 
-          <div class="text-gray-600 text-lg">
+          <div class="text-lg text-gray-600">
             <span class="comments">
-              <i class="fa fa-comments text-gray-600"></i>
+              <i class="text-gray-600 fa fa-comments"></i>
               15
             </span>
           </div>
         </li>
         <li
-          class="
-            flex
-            justify-between
-            items-center
-            p-3
-            pl-6
-            cursor-pointer
-            transition
-            duration-300
-            hover:bg-gray-50
-          "
+          class="flex items-center justify-between p-3 pl-6 transition duration-300 cursor-pointer hover:bg-gray-50"
         >
           <div>
-            <a href="#" class="font-bold block text-gray-600">Song Title</a>
-            <span class="text-gray-500 text-sm">Artist Name</span>
+            <a href="#" class="block font-bold text-gray-600">Song Title</a>
+            <span class="text-sm text-gray-500">Artist Name</span>
           </div>
 
-          <div class="text-gray-600 text-lg">
+          <div class="text-lg text-gray-600">
             <span class="comments">
-              <i class="fa fa-comments text-gray-600"></i>
+              <i class="text-gray-600 fa fa-comments"></i>
               15
             </span>
           </div>
         </li>
         <li
-          class="
-            flex
-            justify-between
-            items-center
-            p-3
-            pl-6
-            cursor-pointer
-            transition
-            duration-300
-            hover:bg-gray-50
-          "
+          class="flex items-center justify-between p-3 pl-6 transition duration-300 cursor-pointer hover:bg-gray-50"
         >
           <div>
-            <a href="#" class="font-bold block text-gray-600">Song Title</a>
-            <span class="text-gray-500 text-sm">Artist Name</span>
+            <a href="#" class="block font-bold text-gray-600">Song Title</a>
+            <span class="text-sm text-gray-500">Artist Name</span>
           </div>
 
-          <div class="text-gray-600 text-lg">
+          <div class="text-lg text-gray-600">
             <span class="comments">
-              <i class="fa fa-comments text-gray-600"></i>
+              <i class="text-gray-600 fa fa-comments"></i>
               15
             </span>
           </div>
         </li>
         <li
-          class="
-            flex
-            justify-between
-            items-center
-            p-3
-            pl-6
-            cursor-pointer
-            transition
-            duration-300
-            hover:bg-gray-50
-          "
+          class="flex items-center justify-between p-3 pl-6 transition duration-300 cursor-pointer hover:bg-gray-50"
         >
           <div>
-            <a href="#" class="font-bold block text-gray-600">Song Title</a>
-            <span class="text-gray-500 text-sm">Artist Name</span>
+            <a href="#" class="block font-bold text-gray-600">Song Title</a>
+            <span class="text-sm text-gray-500">Artist Name</span>
           </div>
 
-          <div class="text-gray-600 text-lg">
+          <div class="text-lg text-gray-600">
             <span class="comments">
-              <i class="fa fa-comments text-gray-600"></i>
+              <i class="text-gray-600 fa fa-comments"></i>
               15
             </span>
           </div>
         </li>
         <li
-          class="
-            flex
-            justify-between
-            items-center
-            p-3
-            pl-6
-            cursor-pointer
-            transition
-            duration-300
-            hover:bg-gray-50
-          "
+          class="flex items-center justify-between p-3 pl-6 transition duration-300 cursor-pointer hover:bg-gray-50"
         >
           <div>
-            <a href="#" class="font-bold block text-gray-600">Song Title</a>
-            <span class="text-gray-500 text-sm">Artist Name</span>
+            <a href="#" class="block font-bold text-gray-600">Song Title</a>
+            <span class="text-sm text-gray-500">Artist Name</span>
           </div>
 
-          <div class="text-gray-600 text-lg">
+          <div class="text-lg text-gray-600">
             <span class="comments">
-              <i class="fa fa-comments text-gray-600"></i>
+              <i class="text-gray-600 fa fa-comments"></i>
               15
             </span>
           </div>
         </li>
         <li
-          class="
-            flex
-            justify-between
-            items-center
-            p-3
-            pl-6
-            cursor-pointer
-            transition
-            duration-300
-            hover:bg-gray-50
-          "
+          class="flex items-center justify-between p-3 pl-6 transition duration-300 cursor-pointer hover:bg-gray-50"
         >
           <div>
-            <a href="#" class="font-bold block text-gray-600">Song Title</a>
-            <span class="text-gray-500 text-sm">Artist Name</span>
+            <a href="#" class="block font-bold text-gray-600">Song Title</a>
+            <span class="text-sm text-gray-500">Artist Name</span>
           </div>
 
-          <div class="text-gray-600 text-lg">
+          <div class="text-lg text-gray-600">
             <span class="comments">
-              <i class="fa fa-comments text-gray-600"></i>
+              <i class="text-gray-600 fa fa-comments"></i>
               15
             </span>
           </div>
         </li>
         <li
-          class="
-            flex
-            justify-between
-            items-center
-            p-3
-            pl-6
-            cursor-pointer
-            transition
-            duration-300
-            hover:bg-gray-50
-          "
+          class="flex items-center justify-between p-3 pl-6 transition duration-300 cursor-pointer hover:bg-gray-50"
         >
           <div>
-            <a href="#" class="font-bold block text-gray-600">Song Title</a>
-            <span class="text-gray-500 text-sm">Artist Name</span>
+            <a href="#" class="block font-bold text-gray-600">Song Title</a>
+            <span class="text-sm text-gray-500">Artist Name</span>
           </div>
 
-          <div class="text-gray-600 text-lg">
+          <div class="text-lg text-gray-600">
             <span class="comments">
-              <i class="fa fa-comments text-gray-600"></i>
+              <i class="text-gray-600 fa fa-comments"></i>
               15
             </span>
           </div>
         </li>
         <li
-          class="
-            flex
-            justify-between
-            items-center
-            p-3
-            pl-6
-            cursor-pointer
-            transition
-            duration-300
-            hover:bg-gray-50
-          "
+          class="flex items-center justify-between p-3 pl-6 transition duration-300 cursor-pointer hover:bg-gray-50"
         >
           <div>
-            <a href="#" class="font-bold block text-gray-600">Song Title</a>
-            <span class="text-gray-500 text-sm">Artist Name</span>
+            <a href="#" class="block font-bold text-gray-600">Song Title</a>
+            <span class="text-sm text-gray-500">Artist Name</span>
           </div>
 
-          <div class="text-gray-600 text-lg">
+          <div class="text-lg text-gray-600">
             <span class="comments">
-              <i class="fa fa-comments text-gray-600"></i>
+              <i class="text-gray-600 fa fa-comments"></i>
               15
             </span>
           </div>
         </li>
         <li
-          class="
-            flex
-            justify-between
-            items-center
-            p-3
-            pl-6
-            cursor-pointer
-            transition
-            duration-300
-            hover:bg-gray-50
-          "
+          class="flex items-center justify-between p-3 pl-6 transition duration-300 cursor-pointer hover:bg-gray-50"
         >
           <div>
-            <a href="#" class="font-bold block text-gray-600">Song Title</a>
-            <span class="text-gray-500 text-sm">Artist Name</span>
+            <a href="#" class="block font-bold text-gray-600">Song Title</a>
+            <span class="text-sm text-gray-500">Artist Name</span>
           </div>
 
-          <div class="text-gray-600 text-lg">
+          <div class="text-lg text-gray-600">
             <span class="comments">
-              <i class="fa fa-comments text-gray-600"></i>
+              <i class="text-gray-600 fa fa-comments"></i>
               15
             </span>
           </div>
         </li>
         <li
-          class="
-            flex
-            justify-between
-            items-center
-            p-3
-            pl-6
-            cursor-pointer
-            transition
-            duration-300
-            hover:bg-gray-50
-          "
+          class="flex items-center justify-between p-3 pl-6 transition duration-300 cursor-pointer hover:bg-gray-50"
         >
           <div>
-            <a href="#" class="font-bold block text-gray-600">Song Title</a>
-            <span class="text-gray-500 text-sm">Artist Name</span>
+            <a href="#" class="block font-bold text-gray-600">Song Title</a>
+            <span class="text-sm text-gray-500">Artist Name</span>
           </div>
 
-          <div class="text-gray-600 text-lg">
+          <div class="text-lg text-gray-600">
             <span class="comments">
-              <i class="fa fa-comments text-gray-600"></i>
+              <i class="text-gray-600 fa fa-comments"></i>
               15
             </span>
           </div>
         </li>
         <li
-          class="
-            flex
-            justify-between
-            items-center
-            p-3
-            pl-6
-            cursor-pointer
-            transition
-            duration-300
-            hover:bg-gray-50
-          "
+          class="flex items-center justify-between p-3 pl-6 transition duration-300 cursor-pointer hover:bg-gray-50"
         >
           <div>
-            <a href="#" class="font-bold block text-gray-600">Song Title</a>
-            <span class="text-gray-500 text-sm">Artist Name</span>
+            <a href="#" class="block font-bold text-gray-600">Song Title</a>
+            <span class="text-sm text-gray-500">Artist Name</span>
           </div>
 
-          <div class="text-gray-600 text-lg">
+          <div class="text-lg text-gray-600">
             <span class="comments">
-              <i class="fa fa-comments text-gray-600"></i>
+              <i class="text-gray-600 fa fa-comments"></i>
               15
             </span>
           </div>
@@ -385,398 +236,67 @@
 
   <!-- Player -->
   <div
-    class="
-      fixed
-      bottom-0
-      left-0
-      bg-white
-      p-5
-      pb-4
-      text-left
-      align-top
-      w-full
-      h-16
-    "
+    class="fixed bottom-0 left-0 w-full h-16 p-5 pb-4 text-left align-top bg-white"
   >
     <div class="relative">
       <!-- Play/Pause Button -->
-      <div class="float-left w-7 h-7 leading-3">
+      <div class="float-left leading-3 w-7 h-7">
         <button type="button">
-          <i class="fa fa-play text-gray-500 text-xl"></i>
+          <i class="text-xl text-gray-500 fa fa-play"></i>
         </button>
       </div>
       <!-- Current Position -->
       <div
-        class="
-          float-left
-          w-7
-          h-7
-          leading-3
-          text-gray-400
-          mt-0
-          text-lg
-          w-14
-          ml-5
-          mt-1
-        "
+        class="float-left mt-0 mt-1 ml-5 text-lg leading-3 text-gray-400 w-7 h-7 w-14"
       >
         <span class="player-currenttime">00:00</span>
       </div>
       <!-- Scrub -->
-      <div class="float-left w-7 h-7 leading-3 ml-7 mt-2 player-scrub">
+      <div class="float-left mt-2 leading-3 w-7 h-7 ml-7 player-scrub">
         <div
-          class="
-            absolute
-            left-0
-            right-0
-            text-lg text-center
-            mx-auto
-            player-song-info
-          "
+          class="absolute left-0 right-0 mx-auto text-lg text-center player-song-info"
         >
           <span class="song-title">Song Title</span> by
           <span class="song-artist">Artist</span>
         </div>
         <!-- Scrub Container  -->
         <span
-          class="
-            block
-            w-full
-            h-2
-            rounded
-            m-1
-            mt-2
-            bg-gray-200
-            relative
-            cursor-pointer
-          "
+          class="relative block w-full h-2 m-1 mt-2 bg-gray-200 rounded cursor-pointer"
         >
           <!-- Player Ball -->
-          <span class="absolute top-neg-8 text-gray-800 text-lg" style="left: 50%">
+          <span
+            class="absolute text-lg text-gray-800 top-neg-8"
+            style="left: 50%;"
+          >
             <i class="fas fa-circle"></i>
           </span>
           <!-- Player Progress Bar-->
           <span
-            class="
-              block
-              h-2
-              rounded
-              bg-gradient-to-r
-              from-green-500
-              to-green-400
-            "
-            style="width: 50%"
+            class="block h-2 rounded bg-gradient-to-r from-green-500 to-green-400"
+            style="width: 50%;"
           ></span>
         </span>
       </div>
       <!-- Duration -->
       <div
-        class="
-          float-left
-          w-7
-          h-7
-          leading-3
-          text-gray-400
-          mt-0
-          text-lg
-          w-14
-          ml-8
-          mt-1
-        "
+        class="float-left mt-0 mt-1 ml-8 text-lg leading-3 text-gray-400 w-7 h-7 w-14"
       >
         <span class="player-duration">03:06</span>
       </div>
     </div>
   </div>
-
-  <!-- Auth Modal -->
-  <div class="fixed z-10 inset-0 overflow-y-auto hidden" id="modal">
-    <div
-      class="
-        flex
-        items-end
-        justify-center
-        min-h-screen
-        pt-4
-        px-4
-        pb-20
-        text-center
-        sm:block
-        sm:p-0
-      "
-    >
-      <div class="fixed inset-0 transition-opacity">
-        <div class="absolute inset-0 bg-gray-800 opacity-75"></div>
-      </div>
-
-      <!-- This element is to trick the browser into centering the modal contents. -->
-      <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
-
-      <div
-        class="
-          inline-block
-          align-bottom
-          bg-white
-          rounded-lg
-          text-left
-          overflow-hidden
-          shadow-xl
-          transform
-          transition-all
-          sm:my-8
-          sm:align-middle
-          sm:max-w-lg
-          sm:w-full
-        "
-      >
-        <!-- Add margin if you want to see some of the overlay behind the modal-->
-        <div class="py-4 text-left px-6">
-          <!--Title-->
-          <div class="flex justify-between items-center pb-4">
-            <p class="text-2xl font-bold">Your Account</p>
-            <!-- Modal Close Button -->
-            <div class="modal-close cursor-pointer z-50">
-              <i class="fas fa-times"></i>
-            </div>
-          </div>
-
-          <!-- Tabs -->
-          <ul class="flex flex-wrap mb-4">
-            <li class="flex-auto text-center">
-              <a
-                class="
-                  block
-                  rounded
-                  py-3
-                  px-4
-                  transition
-                  hover:text-white
-                  text-white
-                  bg-blue-600
-                "
-                href="#"
-                >Login</a
-              >
-            </li>
-            <li class="flex-auto text-center">
-              <a class="block rounded py-3 px-4 transition" href="#">Register</a>
-            </li>
-          </ul>
-
-          <!-- Login Form -->
-          <form>
-            <!-- Email -->
-            <div class="mb-3">
-              <label class="inline-block mb-2">Email</label>
-              <input
-                type="email"
-                class="
-                  block
-                  w-full
-                  py-1.5
-                  px-3
-                  text-gray-800
-                  border border-gray-300
-                  transition
-                  duration-500
-                  focus:outline-none
-                  focus:border-black
-                  rounded
-                "
-                placeholder="Enter Email"
-              />
-            </div>
-            <!-- Password -->
-            <div class="mb-3">
-              <label class="inline-block mb-2">Password</label>
-              <input
-                type="password"
-                class="
-                  block
-                  w-full
-                  py-1.5
-                  px-3
-                  text-gray-800
-                  border border-gray-300
-                  transition
-                  duration-500
-                  focus:outline-none
-                  focus:border-black
-                  rounded
-                "
-                placeholder="Password"
-              />
-            </div>
-            <button
-              type="submit"
-              class="
-                block
-                w-full
-                bg-purple-600
-                text-white
-                py-1.5
-                px-3
-                rounded
-                transition
-                hover:bg-purple-700
-              "
-            >
-              Submit
-            </button>
-          </form>
-          <!-- Registration Form -->
-          <form>
-            <!-- Name -->
-            <div class="mb-3">
-              <label class="inline-block mb-2">Name</label>
-              <input
-                type="text"
-                class="
-                  block
-                  w-full
-                  py-1.5
-                  px-3
-                  text-gray-800
-                  border border-gray-300
-                  transition
-                  duration-500
-                  focus:outline-none
-                  focus:border-black
-                  rounded
-                "
-                placeholder="Enter Name"
-              />
-            </div>
-            <!-- Email -->
-            <div class="mb-3">
-              <label class="inline-block mb-2">Email</label>
-              <input
-                type="email"
-                class="
-                  block
-                  w-full
-                  py-1.5
-                  px-3
-                  text-gray-800
-                  border border-gray-300
-                  transition
-                  duration-500
-                  focus:outline-none
-                  focus:border-black
-                  rounded
-                "
-                placeholder="Enter Email"
-              />
-            </div>
-            <!-- Age -->
-            <div class="mb-3">
-              <label class="inline-block mb-2">Age</label>
-              <input
-                type="number"
-                class="
-                  block
-                  w-full
-                  py-1.5
-                  px-3
-                  text-gray-800
-                  border border-gray-300
-                  transition
-                  duration-500
-                  focus:outline-none
-                  focus:border-black
-                  rounded
-                "
-              />
-            </div>
-            <!-- Password -->
-            <div class="mb-3">
-              <label class="inline-block mb-2">Password</label>
-              <input
-                type="password"
-                class="
-                  block
-                  w-full
-                  py-1.5
-                  px-3
-                  text-gray-800
-                  border border-gray-300
-                  transition
-                  duration-500
-                  focus:outline-none
-                  focus:border-black
-                  rounded
-                "
-                placeholder="Password"
-              />
-            </div>
-            <!-- Confirm Password -->
-            <div class="mb-3">
-              <label class="inline-block mb-2">Confirm Password</label>
-              <input
-                type="password"
-                class="
-                  block
-                  w-full
-                  py-1.5
-                  px-3
-                  text-gray-800
-                  border border-gray-300
-                  transition
-                  duration-500
-                  focus:outline-none
-                  focus:border-black
-                  rounded
-                "
-                placeholder="Confirm Password"
-              />
-            </div>
-            <!-- Country -->
-            <div class="mb-3">
-              <label class="inline-block mb-2">Country</label>
-              <select
-                class="
-                  block
-                  w-full
-                  py-1.5
-                  px-3
-                  text-gray-800
-                  border border-gray-300
-                  transition
-                  duration-500
-                  focus:outline-none
-                  focus:border-black
-                  rounded
-                "
-              >
-                <option value="USA">USA</option>
-                <option value="Mexico">Mexico</option>
-                <option value="Germany">Germany</option>
-              </select>
-            </div>
-            <!-- TOS -->
-            <div class="mb-3 pl-6">
-              <input type="checkbox" class="w-4 h-4 float-left -ml-6 mt-1 rounded" />
-              <label class="inline-block">Accept terms of service</label>
-            </div>
-            <button
-              type="submit"
-              class="
-                block
-                w-full
-                bg-purple-600
-                text-white
-                py-1.5
-                px-3
-                rounded
-                transition
-                hover:bg-purple-700
-              "
-            >
-              Submit
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+  <auth-modal />
 </template>
+
+<script>
+import AppHeader from './components/Header.vue';
+import AuthModal from './components/Auth.vue';
+
+export default {
+  name: 'App',
+  components: {
+    AppHeader,
+    AuthModal,
+  },
+};
+</script>
